@@ -300,7 +300,7 @@ def crop_and_save(detection, crop_idx, output_dir, padding):
     site_dir.mkdir(parents=True, exist_ok=True)
 
     out_path = site_dir / make_filename(detection, crop_idx)
-    img.crop((left, top, right, bottom)).save(out_path, "JPEG", quality=90)
+    img.crop((left, top, right, bottom)).save(out_path, "JPEG", quality=10)
     return out_path
 
 
